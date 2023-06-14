@@ -1,0 +1,14 @@
+
+<div *ngIf="buttons">
+      <iframe [src]="cardText" width="640" height="320" frameBorder="0"></iframe>
+    <div id="buttonGrid">
+        <div *ngFor="let value of buttons; let i = index">
+            <button (click)="getIndex(i)">{{ value }}</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!--Index-->
+<!--<iframe src="" crossorigin allow="cross-origin-isolated" width="640" height="320" frameBorder="0"></iframe>-->

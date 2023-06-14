@@ -1,0 +1,9 @@
+<mat-card *ngIf="buttons">
+    <mat-card-content [innerHTML]="cardText"></mat-card-content>
+    <div id="buttonGrid">
+      <div *ngFor="let value of buttons; let i = index">
+        <button (click)="getIndex(i)">{{ value }}</button>
+      </div>
+    </div>
+  </mat-card>
+  
